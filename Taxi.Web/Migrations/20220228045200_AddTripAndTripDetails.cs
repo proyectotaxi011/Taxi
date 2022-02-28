@@ -13,6 +13,7 @@ namespace Taxi.Web.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
+
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     StartDate = table.Column<DateTime>(nullable: false),
                     EndDate = table.Column<DateTime>(nullable: true),
